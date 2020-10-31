@@ -7,7 +7,6 @@ import { MulterModule } from '@nestjs/platform-express';
 import { extname } from 'path';
 
 const imageFilter = function (req, file, cb) {
-  // accept image only  
   if (!file.originalname.match(/\.(jpg|jpeg|png|svg)$/)) {
     cb(new HttpException(`Unsupported file type ${extname(file.originalname)}`, HttpStatus.BAD_REQUEST), false);
   }
