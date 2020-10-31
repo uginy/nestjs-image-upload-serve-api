@@ -4,7 +4,7 @@ import { TypegooseModule } from "nestjs-typegoose";
 
 @Module({
   imports: [ImageModule,
-    TypegooseModule.forRoot('mongodb://localhost:53353/images', {
+    TypegooseModule.forRoot('mongodb://db_userout:Qwer123!@ds253353.mlab.com:53353/db_images', {
       useNewUrlParser: true,
       useUnifiedTopology: true
     })
