@@ -9,7 +9,7 @@ type ImageFile = {
 @modelOptions({
     options: {
         allowMixed: Severity.ALLOW,
-        customName: 'notification',
+        customName: 'images',
     },
 })
 
